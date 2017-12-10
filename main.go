@@ -129,7 +129,7 @@ func CreateFunctionNotifyFunction(bot *irc.Connection) http.HandlerFunc {
 
 		type Notification struct {
 			Version           string                 `json:"version"`
-			GroupKey          uint64                 `json:"groupKey"`
+			GroupKey          string                 `json:"groupKey"`
 			Status            string                 `json:"status"`
 			Receiver          string                 `json:"receiver"`
 			GroupLables       map[string]interface{} `json:"groupLabels"`
